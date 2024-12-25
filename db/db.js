@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const Connection=async()=>{
-          await  mongoose.connect(process.env.MONGO_URL || 'mongodb+srv://bigbox:box@box.qktu8.mongodb.net/Box?retryWrites=true&w=majority')
+          await  mongoose.connect(process.env.MONGO_URL )
     .then(()=>{
         
         console.log("mongo-DB")
